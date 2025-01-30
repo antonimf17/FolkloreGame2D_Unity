@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      
+
         anim = GetComponent<Animator>();
         PlayerRB = GetComponent<Rigidbody2D>();
 
