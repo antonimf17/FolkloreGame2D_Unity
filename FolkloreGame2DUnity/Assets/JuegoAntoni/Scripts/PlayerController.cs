@@ -60,8 +60,23 @@ public class PlayerController : MonoBehaviour
         }
 
 
+
     }
-   
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemyright"))
+        {
+            collision.gameObject.SetActive(false);
+
+            gameObject.SetActive(false);
+        }
+        if (collision.gameObject.CompareTag("Enemyleft"))
+                {
+            collision.gameObject.SetActive(false);
+
+            gameObject.SetActive(false);
+        }
+    }
 
 
 }
