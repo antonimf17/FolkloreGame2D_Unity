@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.ConstrainedExecution;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMove : MonoBehaviour
 {
     private Rigidbody2D PlayerRB;
     private Animator anim;
@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Movement();
-        
+
     }
 
     void Movement()
@@ -49,6 +49,26 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetFloat("Speed", 0);
         }
+
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemyright"))
+        {
+            collision.gameObject.SetActive(false);
+
+            gameObject.SetActive(false);
+            SceneManager.LoadScene(2);
+        }
+        if (collision.gameObject.CompareTag("Enemyleft"))
+        {
+            collision.gameObject.SetActive(false);
+
+            gameObject.SetActive(false);
+            SceneManager.LoadScene(2);
+        }
+
+    }
+
 
 }

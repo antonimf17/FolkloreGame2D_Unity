@@ -44,8 +44,6 @@ public class EnemyController : MonoBehaviour
         {
             transform.Translate(Vector3.left * speed * Time.deltaTime);
         }
-        if (gameObject.CompareTag("Enemyright"))
-            transform.Translate(Vector3.right * speed * Time.deltaTime);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
