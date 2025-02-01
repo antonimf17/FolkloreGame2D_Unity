@@ -9,6 +9,7 @@ TagManager:
   - Wolfs
   - Enemyleft
   - Enemyright
+  - bullet
   layers:
   - Default
   - TransparentFX

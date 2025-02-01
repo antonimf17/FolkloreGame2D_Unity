@@ -4696,6 +4696,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentPoints: 0
   winPoints: 100
+  WolfsKilled: 0
+  WolfsKillWin: 0
 --- !u!1001 &351311506229548015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4744,9 +4746,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5050981874317594083, guid: b4f332ff24bb4814da1b4b7d5e25aeca, type: 3}
+      propertyPath: speed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5857810195776200521, guid: b4f332ff24bb4814da1b4b7d5e25aeca, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8182507700507631428, guid: b4f332ff24bb4814da1b4b7d5e25aeca, type: 3}
       propertyPath: m_Name

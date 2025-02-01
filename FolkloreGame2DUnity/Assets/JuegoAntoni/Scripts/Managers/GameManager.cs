@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     }
     public int currentPoints;
     public int winPoints;
+    public int WolfsKilled;
+    public int WolfsKillWin;
   
 
     private void Awake()
