@@ -55,6 +55,7 @@ public class EnemyController2 : MonoBehaviour
             collision.gameObject.SetActive(false);
 
             gameObject.SetActive(false);
+
         }
     }
 }

@@ -58,14 +58,14 @@ public class PlayerMove : MonoBehaviour
             collision.gameObject.SetActive(false);
 
             gameObject.SetActive(false);
-            SceneManager.LoadScene(2);
+            GameManager.Instance.GameOvercaperucita();
         }
         if (collision.gameObject.CompareTag("Enemyleft"))
         {
             collision.gameObject.SetActive(false);
 
             gameObject.SetActive(false);
-            SceneManager.LoadScene(2);
+            GameManager.Instance.GameOvercaperucita();
         }
 
     }

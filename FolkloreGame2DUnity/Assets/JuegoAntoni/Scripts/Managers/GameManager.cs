@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,7 +21,14 @@ public class GameManager : MonoBehaviour
     public int winPoints;
     public int WolfsKilled;
     public int WolfsKillWin;
-  
+    public TMP_Text timerText;
+    public float startTime = 150f;
+    private float currentTime;
+    public GameObject gameOverScreen;
+    public bool isGameOver = false;
+    public GameObject winScreen;
+
+
 
     private void Awake()
     {
@@ -31,5 +40,54 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        gameOverScreen.SetActive(false);
+        winScreen.SetActive(false);
+    }
+
+    private void Update()
+    {
+
+        if (GameManager.Instance.currentPoints >= GameManager.Instance.winPoints) { WinGamesoldier(); }
+       
+
+    }
+
+    public void GameOversoldier()
+    {
+        isGameOver = true;
+        gameOverScreen.SetActive(true);
+        WolfsKilled = 0;
+    }
+
+    public void RestartGamesoldier()
+    {
+      
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        WolfsKilled = 0;
+    }
+
+    private void WinGamesoldier()
+    {
+        Debug.Log("You win!");
+        winScreen.SetActive(true);
+        WolfsKilled = 0;
+    }
+    private void WinGamecaperucita()
+    {
+        Debug.Log("You win!");
+        winScreen.SetActive(true);
+        currentPoints = 0;
+    }
+    public void RestartGamecaperucita()
+    {
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        currentPoints = 0;
+    }
+    public void GameOvercaperucita()
+    {
+        isGameOver = true;
+        gameOverScreen.SetActive(true);
+        currentPoints = 0;
     }
 }

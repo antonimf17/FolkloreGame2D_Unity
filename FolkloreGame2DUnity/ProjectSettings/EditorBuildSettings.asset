@@ -6,15 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GamePlay.unity
-    guid: a04a0c5304126694fb1b6068dbb84045
+    path: Assets/Scenes/MainMenu.unity
+    guid: d6ac87899c2b8334b87691b9eae62513
+  - enabled: 1
+    path: Assets/Scenes/ExLevel1.unity
+    guid: b07db7c691a38124fb2f0383e27f3333
+  - enabled: 1
+    path: Assets/Scenes/ScenePart1.unity
+    guid: 9004615b864882d469bf0a56862fc636
+  - enabled: 1
+    path: Assets/Scenes/ExLevel2.unity
+    guid: c0190604de2dac74fb19821ada8fa5a3
   - enabled: 1
     path: Assets/Scenes/SceneAntoni.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/GameOver.unity
-    guid: f2e3ab6cc64ba3f4b80587360ed394cb
+    path: Assets/Scenes/ExLevel3.unity
+    guid: 37a4150f236d8f04eab47f0d63bbcc67
   - enabled: 1
-    path: Assets/Scenes/ScenePart1.unity
-    guid: 9004615b864882d469bf0a56862fc636
+    path: Assets/Scenes/SceneJaume 1.unity
+    guid: 8aa02ee6294481c4eb99c978bb49be59
   m_configObjects: {}

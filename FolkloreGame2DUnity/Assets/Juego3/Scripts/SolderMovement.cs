@@ -45,7 +45,7 @@ public class SoliderMovement : MonoBehaviour
     {
 
         Attack();
-        if (GameManager.Instance.WolfsKilled >= GameManager.Instance.WolfsKillWin) { SceneManager.LoadScene(0); }
+        
     }
 
 
@@ -128,14 +128,15 @@ public class SoliderMovement : MonoBehaviour
             collision.gameObject.SetActive(false);
 
             gameObject.SetActive(false);
-            SceneManager.LoadScene(2);
+            GameManager.Instance.GameOversoldier();
+
         }
         if (collision.gameObject.CompareTag("Enemyleft"))
         {
             collision.gameObject.SetActive(false);
 
             gameObject.SetActive(false);
-            SceneManager.LoadScene(2);
+            GameManager.Instance.GameOversoldier();
         }
 
     }
