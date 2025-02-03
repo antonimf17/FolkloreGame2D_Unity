@@ -45,6 +45,7 @@ public class SoliderMovement : MonoBehaviour
     {
 
         Attack();
+        if (GameManager.Instance.WolfsKilled >= GameManager.Instance.WolfsKillWin) { SceneManager.LoadScene(0); }
     }
 
 
