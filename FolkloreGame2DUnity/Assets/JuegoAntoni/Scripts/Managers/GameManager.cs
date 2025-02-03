@@ -46,9 +46,10 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        Time.timeScale = 1f;
 
-        if (GameManager.Instance.currentPoints >= GameManager.Instance.winPoints) { WinGamesoldier(); }
-       
+        if (GameManager.Instance.WolfsKilled >= GameManager.Instance.WolfsKillWin) { WinGamesoldier(); }
+        if (GameManager.Instance.currentPoints >= GameManager.Instance.winPoints) { WinGamecaperucita(); }
 
     }
 
@@ -57,6 +58,7 @@ public class GameManager : MonoBehaviour
         isGameOver = true;
         gameOverScreen.SetActive(true);
         WolfsKilled = 0;
+
     }
 
     public void RestartGamesoldier()
@@ -64,6 +66,7 @@ public class GameManager : MonoBehaviour
       
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         WolfsKilled = 0;
+      
     }
 
     private void WinGamesoldier()
@@ -71,6 +74,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("You win!");
         winScreen.SetActive(true);
         WolfsKilled = 0;
+        
     }
     private void WinGamecaperucita()
     {

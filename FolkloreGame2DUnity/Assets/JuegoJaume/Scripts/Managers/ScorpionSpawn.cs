@@ -7,7 +7,7 @@ public class ScorpionSpawn : MonoBehaviour
     [Header("Spawn Configurations")]
     [SerializeField] GameObject spawnObject;
     public float spawnInitialDelay = 3f;
-    public float spawnRate = 1f;
+    public float spawnRate = 0.6f;
 
     [Header("Randomizer Configuration")]
     [SerializeField] bool isRandom;

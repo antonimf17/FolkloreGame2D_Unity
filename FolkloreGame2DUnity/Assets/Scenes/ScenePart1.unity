@@ -478,8 +478,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3216042, y: 0.36588338}
   m_AnchorMax: {x: 0.6835625, y: 0.772631}
-  m_AnchoredPosition: {x: -3.9974365, y: -3.5}
-  m_SizeDelta: {x: 1.9949951, y: 0.9819946}
+  m_AnchoredPosition: {x: -3.4837952, y: -0.000030517578}
+  m_SizeDelta: {x: 246.7149, y: 56.5376}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &373121674
 MonoBehaviour:
@@ -494,7 +494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.08736976, g: 0.4716981, b: 0.037824854, a: 1}
+  m_Color: {r: 0.0614691, g: 0.26415092, b: 0.03613386, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1141,7 +1141,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.060608, y: -105}
+  m_AnchoredPosition: {x: -0.060669, y: -136}
   m_SizeDelta: {x: 273.494, y: 51.28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &581568402
@@ -1491,8 +1491,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 12.046997}
-  m_SizeDelta: {x: 0, y: 24.093018}
+  m_AnchoredPosition: {x: -0.00012207031, y: 12.046997}
+  m_SizeDelta: {x: 34.8389, y: 24.093}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &678314359
 MonoBehaviour:
@@ -3447,7 +3447,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Exit
+  m_text: Main Menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 70e15cceb13bb444ba9acc9a15a6d7f1, type: 2}
   m_sharedMaterial: {fileID: 2353514675505123742, guid: 70e15cceb13bb444ba9acc9a15a6d7f1, type: 2}
@@ -5014,7 +5014,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.060608, y: -39.64}
+  m_AnchoredPosition: {x: -0.000012398, y: -62.449}
   m_SizeDelta: {x: 273.494, y: 51.28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1504013472
@@ -5213,7 +5213,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.1885652, y: 0.42576128}
   m_AnchorMax: {x: 0.81700003, y: 0.753}
-  m_AnchoredPosition: {x: -1.9999695, y: -0.5}
+  m_AnchoredPosition: {x: 1.9500122, y: 0.72998047}
   m_SizeDelta: {x: 3.899994, y: 1.4599991}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1683586838
@@ -5270,8 +5270,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -5313,6 +5313,134 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683586836}
   m_CullTransparentMesh: 1
+--- !u!1 &1758139236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1758139238}
+  - component: {fileID: 1758139237}
+  m_Layer: 0
+  m_Name: 01 - Falling Apart (Prologue)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1758139237
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758139236}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 72ce8bf1da3366b4c9d5772c599dec5f, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1758139238
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758139236}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1791680871
 GameObject:
   m_ObjectHideFlags: 0
@@ -5370,7 +5498,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Exit
+  m_text: Main menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 70e15cceb13bb444ba9acc9a15a6d7f1, type: 2}
   m_sharedMaterial: {fileID: 2353514675505123742, guid: 70e15cceb13bb444ba9acc9a15a6d7f1, type: 2}
@@ -5758,3 +5886,4 @@ SceneRoots:
   - {fileID: 1605649510}
   - {fileID: 1864048309}
   - {fileID: 1913969897}
+  - {fileID: 1758139238}
